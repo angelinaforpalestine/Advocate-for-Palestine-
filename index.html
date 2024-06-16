@@ -1,18 +1,21 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stand for Peace and Human Rights: Ceasefire for Palestine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
         }
         header, footer {
-            background: #333;
+            background: #004000;
             color: #fff;
             text-align: center;
             padding: 1em 0;
@@ -22,11 +25,15 @@ DOCTYPE html>
             margin: 0 15px;
             text-decoration: none;
         }
+        nav a:hover {
+            text-decoration: underline;
+        }
         .banner {
-            background: url('banner-image.jpg') no-repeat center center/cover;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Palestine.svg/1200px-Flag_of_Palestine.svg.png') no-repeat center center/cover;
             color: #fff;
             padding: 60px 20px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         .content {
             padding: 20px;
@@ -35,16 +42,52 @@ DOCTYPE html>
         }
         .content h2 {
             text-align: center;
-            color: #333;
+            color: #004000;
         }
-        .email-template, .social-media {
-            background: #f4f4f4;
+        .email-template, .social-media, .fundraisers {
+            background: #fff;
             padding: 15px;
             margin: 20px 0;
             border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .email-template pre, .social-media pre {
+        .email-template pre, .social-media pre, .fundraisers ul {
             white-space: pre-wrap;
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .email-template h3, .social-media h3, .fundraisers h3 {
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #004000;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background: #005000;
         }
     </style>
 </head>
@@ -55,6 +98,7 @@ DOCTYPE html>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#action">Take Action</a>
+            <a href="#fundraisers">Fundraisers</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -105,3 +149,41 @@ Sincerely,
             <p>Copy and paste this message to share on Twitter:</p>
             <pre>
 📝 I urge our representatives to call for a ceasefire in Palestine, organize humanitarian aid, and support long-term peace efforts. Let’s stand for peace and human rights. #CeasefireForPalestine #HumanitarianAid
+            </pre>
+        </div>
+    </section>
+    <section class="content" id="fundraisers">
+        <h2>Fundraisers for Palestine</h2>
+        <div class="fundraisers">
+            <h3>Click to Help Palestine</h3>
+            <ul>
+                <li><a href="https://arab.org/click-to-help/palestine/">arab.org: Click to Help Palestine</a></li>
+            </ul>
+            <h3>Fundraisers for Families</h3>
+            <ul>
+                <li><a href="https://t.co/Ra5S8QlsmK">Yamen's Family</a> - Help Yamen's family leave Gaza!</li>
+                <li><a href="https://t.co/SIzYXMoBYX">Family in Need</a></li>
+                <li><a href="https://t.co/mQm8dlvMsh">Another Family in Need</a></li>
+                <li><a href="https://t.co/Qv59Ap0vFD">Support for Displaced Family</a></li>
+                <li><a href="https://gofund.me/aefb985a">Humanitarian Aid</a></li>
+                <li><a href="https://t.co/LejdQgJdpM">Emergency Relief Fund</a></li>
+                <li><a href="https://t.co/qZK4k8eSGS">Immediate Assistance Needed</a></li>
+                <li><a href="https://t.co/TEp3319DND">Urgent Support Required</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="content" id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions or want to get more involved, please reach out to us through the form below or connect with us on social media.</p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024
