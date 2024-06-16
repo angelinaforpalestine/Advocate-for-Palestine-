@@ -30,10 +30,25 @@
         }
         .banner {
             background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Palestine.svg/1200px-Flag_of_Palestine.svg.png') no-repeat center center/cover;
-            color: #fff;
+            color: #004000; /* Changed text color to dark green for visibility */
             padding: 60px 20px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        .banner h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .banner p {
+            font-size: 1.2em;
+        }
+        .watermelon-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 150px;
         }
         .content {
             padding: 20px;
@@ -43,6 +58,11 @@
         .content h2 {
             text-align: center;
             color: #004000;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .content p {
+            text-align: justify;
         }
         .email-template, .social-media, .fundraisers {
             background: #fff;
@@ -58,7 +78,16 @@
             border-radius: 5px;
         }
         .email-template h3, .social-media h3, .fundraisers h3 {
-            color: #333;
+            color: #004000;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .fundraisers ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .fundraisers li {
+            margin-bottom: 10px;
         }
         form {
             display: flex;
@@ -89,6 +118,9 @@
         form input[type="submit"]:hover {
             background: #005000;
         }
+        footer p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -105,6 +137,7 @@
     <section class="banner" id="home">
         <h2>Urgent Call for Ceasefire and Humanitarian Support for Palestine</h2>
         <p>Join us in advocating for peace and providing aid to those in need.</p>
+        <img src="https://emojicombos.com/files/apple-emojis/animals-emoji-clipart/png/watermelon.png" alt="Watermelon" class="watermelon-img">
     </section>
     <section class="content" id="about">
         <h2>About</h2>
@@ -161,29 +194,9 @@ Sincerely,
             </ul>
             <h3>Fundraisers for Families</h3>
             <ul>
-                <li><a href="https://t.co/Ra5S8QlsmK">Yamen's Family</a> - Help Yamen's family leave Gaza!</li>
-                <li><a href="https://t.co/SIzYXMoBYX">Family in Need</a></li>
-                <li><a href="https://t.co/mQm8dlvMsh">Another Family in Need</a></li>
-                <li><a href="https://t.co/Qv59Ap0vFD">Support for Displaced Family</a></li>
-                <li><a href="https://gofund.me/aefb985a">Humanitarian Aid</a></li>
-                <li><a href="https://t.co/LejdQgJdpM">Emergency Relief Fund</a></li>
-                <li><a href="https://t.co/qZK4k8eSGS">Immediate Assistance Needed</a></li>
-                <li><a href="https://t.co/TEp3319DND">Urgent Support Required</a></li>
-            </ul>
-        </div>
-    </section>
-    <section class="content" id="contact">
-        <h2>Contact</h2>
-        <p>If you have any questions or want to get more involved, please reach out to us through the form below or connect with us on social media.</p>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br>
-            <input type="submit" value="Send">
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2024
+                <li>
+                    <a href="https://t.co/Ra5S8QlsmK">Help Yamen's Family Leave Gaza!</a> - Yamen, a young activist, has launched a fundraiser to help his family escape the conflict in Gaza. Your support will provide them with the means to find safety and rebuild their lives.</li>
+                <li>
+                    <a href="https://t.co/SIzYXMoBYX">Emergency Support for Family</a> - This family urgently needs financial support to secure shelter and basic necessities amidst the ongoing crisis.</li>
+                <li>
+                    <a href="https://t.co/mQm8dlvMsh">Support for Another Family</a> - Contribute to this fundraiser to assist another family affected by the conflict in Palestine.
